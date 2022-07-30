@@ -1,1 +1,22 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "Bodoni";
+  src: url("../fonts/Bodoni/bodoni-webfont.woff") format("truetype");
+}
+@font-face {
+  font-family: "Avante-Garde";
+  src: url("../fonts/Avante-Garde/AVGARDN_2.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../fonts/Garamond/GaramondPremrPro.woff") format("woff");
+}
+.bodoni {
+  font-family: "Bodoni";
+}
+.avante {
+  font-family: "Avante-Garde";
+}
+.garamond {
+  font-family: "Garamond";
+}
+/*# sourceMappingURL=index.css.map */
