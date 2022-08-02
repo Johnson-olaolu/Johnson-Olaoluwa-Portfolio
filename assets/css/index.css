@@ -1,22 +1,100 @@
 @font-face {
   font-family: "Bodoni";
-  src: url("../fonts/Bodoni/bodoni-webfont.woff") format("truetype");
+  src: url("../fonts/Bodoni/bodoni-webfont.woff") format("woff");
 }
-@font-face {
-  font-family: "Avante-Garde";
-  src: url("../fonts/Avante-Garde/AVGARDN_2.TTF") format("truetype");
-}
+
 @font-face {
   font-family: "Garamond";
   src: url("../fonts/Garamond/GaramondPremrPro.woff") format("woff");
 }
-.bodoni {
-  font-family: "Bodoni";
+
+@font-face {
+  font-family: "Avant Garde";
+  src: url("../fonts/Avante-Garde/AVGARDN_2.TTF") format("truetype");
 }
-.avante {
-  font-family: "Avante-Garde";
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.garamond {
-  font-family: "Garamond";
+
+.body {
+  height: 100vh;
+  background: #d9d9d9;
+  position: relative;
+}
+
+.body .social-media {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  text-align: right;
+}
+
+.body .social-media .social-media-item {
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+
+.body .social-media .social-media-item:first-child .details {
+  border-top-left-radius: 8px;
+}
+
+.body .social-media .social-media-item:last-child .details {
+  border-bottom-left-radius: 8px;
+}
+
+.body .social-media .social-media-item .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  background: white;
+}
+
+.body .social-media .social-media-item .details .icon {
+  height: 20px;
+  width: 20px;
+  color: #595959;
+  cursor: pointer;
+}
+
+.body .social-media .social-media-item .details a {
+  display: none;
+  width: 0;
+  overflow: hidden;
+  color: #595959;
+  text-decoration: none;
+  gap: 4px;
+}
+
+.body .social-media .social-media-item .details a:visited {
+  color: #595959;
+}
+
+.body .social-media .social-media-item .details a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #595959;
+  font-size: 12px;
+}
+
+.body .social-media .social-media-item .details a .icon {
+  height: 14px;
+  width: 14px;
 }
 /*# sourceMappingURL=index.css.map */

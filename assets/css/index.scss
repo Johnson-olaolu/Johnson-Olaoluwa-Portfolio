@@ -1,6 +1,87 @@
-@import "../fonts/fonts.css";
+@import "../fonts/fonts";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+//variables --color
+$gray100: #d9d9d9;
+$gray300: #a6a6a6;
+$gray500: #595959;
+$gray700: #262626;
+$gray900: #0d0d0d;
 
-.bodoni {
-    font-family: "Bodoni";
+//shadow
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+$shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+$shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+$shadow-none: 0 0 #0000;
+
+.body {
+  height: 100vh;
+  background: $gray100;
+  position: relative;
+  .social-media {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    text-align: right;
+
+    .social-media-item {
+      width: 36px;
+      height: 36px;
+      position: relative;
+      &:first-child {
+        .details {
+           border-top-left-radius: 8px;
+        }
+      }
+      &:last-child {
+        .details {
+          border-bottom-left-radius: 8px;
+        }
+      }
+      .details {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        background: white;
+        .icon {
+          height: 20px;
+          width: 20px;
+          color: $gray500;
+          cursor: pointer;
+        }
+        a {
+          display: none;
+          width: 0;
+          overflow: hidden;
+          color: $gray500;
+          text-decoration: none;
+          gap: 4px;
+          &:visited {
+            color: $gray500;
+          }
+          p {
+            display: flex;
+            align-items: center;
+            color: $gray500;
+            font-size: 12px;
+          }
+          .icon {
+            height: 14px;
+            width: 14px;
+          }
+        }
+      }
+    }
+  }
 }
