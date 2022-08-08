@@ -24,6 +24,95 @@
   height: 100vh;
   background: #d9d9d9;
   position: relative;
+  padding: 16px;
+  padding-top: 80px;
+  font-family: "Garamond";
+}
+
+.body .container {
+  max-width: 848px;
+  margin: 0 auto;
+  height: 600px;
+  background: white;
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.body .pagination-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 32px;
+  border-radius: 9999px;
+  padding: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  gap: 16px;
+}
+
+.body .pagination-bar .scroll-button {
+  cursor: pointer;
+  height: 32px;
+  padding: 0 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  border: 1px solid #0d0d0d;
+  color: #0d0d0d;
+  background: transparent;
+  border-radius: 9999px;
+  font-family: "Avant Garde";
+}
+
+.body .pagination-bar .scroll-button:hover {
+  background: #0d0d0d;
+  color: white;
+}
+
+.body .pagination-bar .scroll-button .icon {
+  height: 14px;
+  width: 14px;
+}
+
+.body .pagination-bar .pages-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.body .pagination-bar .pages-select .single-page-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  width: 32px;
+  border-radius: 99999px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Avant Garde";
+  border: 1px solid #0d0d0d;
+  font-size: 14px;
+}
+
+.body .pagination-bar .pages-select .single-page-select.active {
+  background: #0d0d0d;
+  color: white;
 }
 
 .body .social-media {

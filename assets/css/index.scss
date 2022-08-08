@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
 }
+//variables font 
+$bodoni : "Bodoni";
+$garamond : "Garamond";
+$avante : "Avant Garde";
+
 
 //variables --color
 $gray100: #d9d9d9;
@@ -26,6 +31,71 @@ $shadow-none: 0 0 #0000;
   height: 100vh;
   background: $gray100;
   position: relative;
+  padding: 16px;
+  padding-top: 80px;
+  font-family: $garamond;
+
+  .container {
+    max-width: 848px;
+    margin: 0 auto;
+    height: 600px;
+    background: white;
+    box-shadow: $shadow-2xl;
+    border-radius: 2px;
+  }
+  .pagination-bar {
+    display: flex;
+    position: fixed;
+    bottom: 32px;
+    border-radius: 9999px;
+    padding: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 16px;
+    .scroll-button {
+      cursor: pointer;
+      height: 32px;
+      padding: 0 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      border:  1px solid $gray900;
+      color: $gray900;
+      background: transparent;
+      border-radius: 9999px;
+      font-family: $avante;
+      &:hover {
+        background: $gray900;
+        color: white;
+        }
+      .icon {
+        height: 14px;
+        width: 14px;
+      }
+    }
+    .pages-select {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .single-page-select {
+        display: flex;
+        height: 32px;
+        width: 32px;
+        border-radius: 99999px;
+        align-items: center;
+        justify-content: center;
+        font-family: $avante;
+      border:  1px solid $gray900;
+        font-size: 14px;
+        &.active {
+          background: $gray900;
+          color: white;
+        }
+      }
+    }
+  }
+
   .social-media {
     position: absolute;
     right: 0;
